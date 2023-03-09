@@ -23,11 +23,19 @@ h2.card-title {
   color: #29363d;
   font-size: 16px;
   font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 p.card-content {
   color: #5a6a72;
   font-size: 12px;
   font-weight: 400;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  height: 42px;
 }
 p.btn-more {
   color: #29363d;
@@ -51,10 +59,4 @@ img {
 }
 .card-text {
   margin: 25px 16px 19px 16px;
-}
-.card-content {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
 }
